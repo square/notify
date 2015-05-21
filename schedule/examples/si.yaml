@@ -1,0 +1,30 @@
+entries:
+ -
+  name: uswest
+  start: 06:00AM
+  end: 06:00PM
+  location: US/Pacific
+  rotations:
+   primary:
+    - [us1, us2]
+    - [us3]
+   secondary:
+    - [us3]
+    - [us1, us2]
+ -
+  name: india
+  start: 06:30AM
+  end: 06:30PM
+  location: Asia/Calcutta
+  rotations:
+   primary:
+    - [ind1, ind2]
+    - [ind3]
+overrides:
+ -
+  start: 2015-09-03 06:00AM
+  end: 2015-09-03 07:00AM
+  comment: more sleep
+  rotations:
+   primary: [ind1, b2]
+  location: US/Pacific
